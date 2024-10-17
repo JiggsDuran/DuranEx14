@@ -41,7 +41,11 @@ public class Coin {
 	}
 
 	public int getValue() {
-		return value;
+		LOGGER.info("Start of getValue()");
+		int res = value;
+		LOGGER.info("Value: {}", res);
+		LOGGER.info("End of getValue()");
+		return res;
 	}
 
 	public String toString() {
